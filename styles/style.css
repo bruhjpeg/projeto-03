@@ -1,8 +1,20 @@
 /* font-family: 'Archivo', sans-serif;
 font-family: 'Poppins', sans-serif; */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+input,
+button,
+select,
+textarea {
+  font-family: 'Poppins', sans-serif;
+}
 
 body {
-  font-family: 'Poppins', sans-serif;
   background-color: #e5e5e5;
 }
 
@@ -36,6 +48,8 @@ header h1 {
   font-size: 36px;
   line-height: 42px;
   color: white;
+
+  margin-bottom: 24px;
 }
 
 header p {
@@ -48,8 +62,64 @@ form {
   background-color: #fafafc;
 
   margin-top: 38px;
+  padding: 64px;
+
   min-height: 300px;
 
   border-radius: 8px 8px 0 0;
-  border: 1px solid #D6D6D6;
+  border: 1px solid #d6d6d6;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+
+  width: 100%;
+
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 16px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #4e4958;
+
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  font-size: 12px;
+  line-height: 20px;
+
+  color: #c1bccc;
+
+  margin-left: 12px;
+}
+
+.input-wrapper input {
+  font-size: 16px;
+  line-height: 26px;
+
+  background: #fafafc;
+  color: #c1bccc;
+
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+
+  height: 56px;
+
+  padding: 0 24px;
 }
