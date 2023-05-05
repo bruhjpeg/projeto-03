@@ -74,6 +74,12 @@ fieldset {
   border: none;
 }
 
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 fieldset legend {
   font-family: 'Archivo', sans-serif;
   font-weight: 600;
@@ -104,17 +110,23 @@ fieldset legend {
   font-size: 12px;
   line-height: 20px;
 
-  color: #c1bccc;
+  color: #b1aebb;
 
   margin-left: 12px;
 }
 
-.input-wrapper input {
+.input-wrapper label span:hover {
+  color: #6c6a71;
+}
+
+.input-wrapper input,
+.input-wrapper textarea,
+.input-wrapper select {
   font-size: 16px;
   line-height: 26px;
 
   background: #fafafc;
-  color: #c1bccc;
+  color: #6c6a71;
 
   border: 1px solid #e6e6f0;
   border-radius: 8px;
@@ -122,4 +134,13 @@ fieldset legend {
   height: 56px;
 
   padding: 0 24px;
+}
+
+.input-wrapper textarea {
+  padding: 0;
+  height: 168px;
+}
+
+.input-wrapper select {
+  appearance: none;
 }
