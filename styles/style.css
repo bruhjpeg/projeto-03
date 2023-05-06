@@ -177,7 +177,7 @@ fieldset legend {
 }
 
 .checkbox-wrapper input:checked + label::before {
-background: red;
+background:url(/img/verificar.png);
 }
 .three-col {
   display: flex;
