@@ -101,7 +101,8 @@ fieldset legend {
   flex-direction: column;
 }
 
-.input-wrapper label {
+.input-wrapper label,
+.checkbox-wrapper {
   font-size: 14px;
   line-height: 24px;
 
@@ -153,4 +154,36 @@ fieldset legend {
 
   background-repeat: no-repeat;
   background-position: right 24px top 50%;
+}
+
+.checkbox-wrapper input {
+  display: none;
+}
+.checkbox-wrapper label {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.checkbox-wrapper label::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+
+  display: block;
+}
+
+.checkbox-wrapper input:checked + label::before {
+background: red;
+}
+.three-col {
+  display: flex;
+  gap: 20px;
+}
+
+.three-col > div:nth-child(1) {
+  width: 100%;
 }
