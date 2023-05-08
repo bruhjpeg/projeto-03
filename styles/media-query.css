@@ -1,9 +1,10 @@
-@media screen and (max-width:768px) {
- 
-  .page {
-    width: 100%;
+@media screen and (max-width: 768px) {
+  body {
+    min-width: 500px;
   }
-
+  .page {
+    width: 100vw;
+  }
 
   header {
     text-align: center;
@@ -14,10 +15,12 @@
     width: 100%;
   }
 
+  
+
   .three-col {
+    display: block;
     width: 200px;
-    flex-direction: column;
-    align-items: center;
+    margin: auto;
   }
 
   footer {
