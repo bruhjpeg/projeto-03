@@ -156,8 +156,18 @@ fieldset legend {
   background-position: right 24px top 50%;
 }
 
+.checkbox-wrapper {
+  position: relative;
+}
+
 .checkbox-wrapper input {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+
+  opacity: 0;
 }
 .checkbox-wrapper label {
   margin: 0;
@@ -178,6 +188,10 @@ fieldset legend {
 
 .checkbox-wrapper input:checked + label::before {
 background:url(/img/verificar.png);
+}
+
+.checkbox-wrapper input:focus + label::before {
+  outline: 2px solid black;
 }
 .three-col {
   display: flex;
