@@ -8,7 +8,6 @@ font-family: 'Poppins', sans-serif; */
 
 body,
 input,
-button,
 select,
 textarea {
   font-family: 'Poppins', sans-serif;
@@ -187,7 +186,7 @@ fieldset legend {
 }
 
 .checkbox-wrapper input:checked + label::before {
-background:url(/img/verificar.png);
+  background: url(/img/verificar.png);
 }
 
 .checkbox-wrapper input:focus + label::before {
@@ -200,4 +199,39 @@ background:url(/img/verificar.png);
 
 .three-col > div:nth-child(1) {
   width: 100%;
+}
+
+footer {
+  background: #f0f0f4;
+
+  height: 136px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px 64px;
+  margin-bottom: 100px;
+
+  border-radius: 0 0 8px 8px;
+  border: 1px solid #d6d6d6;
+}
+
+footer .button {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+
+  height: 56px;
+  border-radius: 8px;
+  border: none;
+
+  background-color: #04d361;
+  color: white;
+
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #04a94e;
 }
